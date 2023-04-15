@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.List;
 
-public class Human {
+public class Human implements Serializable{
 
     private String name;
     private Human father;
@@ -33,13 +34,8 @@ public class Human {
         return this.name;
     }
 
-    public String getInfo() {
-
-        StringBuilder infoHuman = new StringBuilder();
-        infoHuman.append(name+"\n");
-        infoHuman.append(father.name +" - Отец\n");
-        infoHuman.append(mother.name +" - Мать\n");
-        infoHuman.append("\n");
-        return infoHuman.toString();
+    @Override
+    public String toString() {
+        return name + "\n Отец - " + father.getName() + "\n Мать - "+ mother.getName();
     }
 }
