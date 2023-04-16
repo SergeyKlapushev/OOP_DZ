@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 public class Geneticist implements Recording, Readable {
 
     @Override
-    public void record(Human human){
+    public void record(Human human) {
 
         try {
             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("DataFamilyTree.bin"));
@@ -36,5 +36,4 @@ public class Geneticist implements Recording, Readable {
 
     }
 
-    
 }
