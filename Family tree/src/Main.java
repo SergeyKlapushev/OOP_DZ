@@ -1,5 +1,3 @@
-import java.util.PrimitiveIterator.OfLong;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -22,13 +20,16 @@ public class Main {
         Human vasili = new Human("Василий", 2020, 6, 3, new Human("Сергей"), new Human("Вероника"));
         familyTree.addHuman(vasili);
 
+        // Реализован интерфайс iteravle
+        for (Human human : familyTree) {
+            System.out.println(human);
+        }
+
         // Сортировка по имени
         service.sortByName();
-        System.out.println(familyTree.getHumanList());
 
         //Сортировка по дате рождения (От младшего к старшему)
         service.sortByDateBorn();
-        System.out.println(familyTree.getHumanList());
 
     }
 }
