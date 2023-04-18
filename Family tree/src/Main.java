@@ -20,6 +20,7 @@ public class Main {
         Human vasili = new Human("Василий", 2020, 6, 3, new Human("Сергей"), new Human("Вероника"));
         familyTree.addHuman(vasili);
 
+
         // Реализован интерфайс iterable
         for (Human human : familyTree) {
             System.out.println(human);

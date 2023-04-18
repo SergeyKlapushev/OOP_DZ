@@ -1,4 +1,4 @@
 
-public interface Readable{
-    void read(Human human);
+public interface Readable<H>{
+    void read(H human);
 }

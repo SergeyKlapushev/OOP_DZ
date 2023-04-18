@@ -1,4 +1,4 @@
 
-public interface Recording {
-    void record(Human human);
+public interface Recording<H> {
+    void record(H human);
 }
