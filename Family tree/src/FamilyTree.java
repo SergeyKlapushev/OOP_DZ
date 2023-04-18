@@ -1,40 +1,39 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import java.util.Iterator;
 
-public class FamilyTree implements Iterable<Human> {
-    private List<Human> humanList;
+public class FamilyTree<H> implements Iterable<H>{
+    private List<H> humanList;
 
     public FamilyTree() {
         humanList = new ArrayList<>();
     }
 
-    public FamilyTree(List<Human> humanList) {
+    public FamilyTree(List<H> humanList) {
         this.humanList = humanList;
     }
 
-    public List<Human> getHumanList() {
+    public List<H> getHumanList() {
         return humanList;
     }
 
-    public void addHuman(Human human) {
+    public void addHuman(H human) {
         humanList.add(human);
     }
 
-    public void addBranch(Human human, Human father, Human mother) {
+    public void addBranch(H human, H father, H mother) {
         humanList.add(human);
         humanList.add(father);
         humanList.add(mother);
     }
 
-    public void addBranch(Human human, Human father, Human mother, List<Human> childs) {
+    public void addBranch(H human, H father, H mother, List<H> childs) {
         humanList.add(human);
         humanList.add(father);
         humanList.add(mother);
 
-        for (Human child : childs) {
+        for (H child : childs) {
             humanList.add(child);
         }
     }
@@ -49,7 +48,7 @@ public class FamilyTree implements Iterable<Human> {
     
 
     @Override
-    public Iterator<Human> iterator() {
+    public Iterator<H> iterator() {
         return new HumanIterator(humanList);
     }
 }

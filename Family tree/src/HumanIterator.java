@@ -1,11 +1,11 @@
 import java.util.Iterator;
 import java.util.List;
 
-public class HumanIterator implements Iterator<Human> {
+public class HumanIterator<H> implements Iterator<H> {
     private int index;
-    private List<Human> humanList;
+    private List<H> humanList;
 
-    public HumanIterator(List<Human> humanList){
+    public HumanIterator(List<H> humanList){
         this.humanList = humanList;
     }
 
@@ -14,7 +14,7 @@ public class HumanIterator implements Iterator<Human> {
         return index < humanList.size();
     }
 
-    public Human next() {
+    public H next() {
         return humanList.get(index++);
     }
 }

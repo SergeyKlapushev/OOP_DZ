@@ -54,7 +54,8 @@ public class Human implements Serializable, Comparable<Human> {
     public String toString() {
         return "\n--------------------\n" + name + "\nродился:" + birhtDay + "\n Отец - " + father.getName()
                 + "\n Мать - "
-                + mother.getName();
+                + mother.getName()
+                +"\n--------------------";
     }
 
 

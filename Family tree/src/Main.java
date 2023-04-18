@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        FamilyTree familyTree = new FamilyTree();
+        FamilyTree<Human> familyTree = new FamilyTree<>();
         Service service = new Service(familyTree);
 
         Human petr1 = new Human("Пётр", 1672, 6, 9, new Human("Александр"), new Human("Екатерина"));
@@ -20,7 +20,7 @@ public class Main {
         Human vasili = new Human("Василий", 2020, 6, 3, new Human("Сергей"), new Human("Вероника"));
         familyTree.addHuman(vasili);
 
-        // Реализован интерфайс iteravle
+        // Реализован интерфайс iterable
         for (Human human : familyTree) {
             System.out.println(human);
         }
@@ -28,7 +28,7 @@ public class Main {
         // Сортировка по имени
         service.sortByName();
 
-        //Сортировка по дате рождения (От младшего к старшему)
+        // Сортировка по дате рождения (От младшего к старшему)
         service.sortByDateBorn();
 
     }

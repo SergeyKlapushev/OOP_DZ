@@ -1,6 +1,6 @@
 import java.util.Comparator;
 
-public class SortHumanByName implements Comparator<Human>{
+public class SortHumanByName<H> implements Comparator<Human>{
 
     @Override
     public int compare(Human o1, Human o2) {
