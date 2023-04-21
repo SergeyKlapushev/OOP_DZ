@@ -3,12 +3,11 @@ import java.util.List;
 
 import java.util.Iterator;
 
-public class FamilyTree<H extends Human> implements Iterable<H>{
+public class FamilyTree<H> implements Iterable<H>{
     private List<H> humanList;
 
     public FamilyTree() {
-        humanList = 
-        new ArrayList<>();
+        humanList = new ArrayList<>();
     }
 
     public FamilyTree(List<H> humanList) {
