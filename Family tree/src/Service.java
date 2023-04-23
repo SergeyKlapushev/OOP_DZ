@@ -1,3 +1,6 @@
+import familyTree.FamilyTree;
+import familyTree.human.Human;
+
 public class Service {
     private FamilyTree tree;
 

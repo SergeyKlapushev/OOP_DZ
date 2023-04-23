@@ -1,10 +1,17 @@
+import familyTree.FamilyTree;
+import familyTree.human.Human;
+import genetic.Geneticist;
+import ui.Console;
+import ui.View;
+
 public class Main {
 
     public static void main(String[] args) {
+        
+        View view = new Console();
+        view.start();        
 
-        FamilyTree<Human> familyTree = new FamilyTree<>();
-        Service service = new Service(familyTree);
-
+/*
         Human petr1 = new Human("Пётр", 1672, 6, 9, new Human("Александр"), new Human("Екатерина"));
         familyTree.addHuman(petr1);
 
@@ -31,6 +38,6 @@ public class Main {
 
         // Сортировка по дате рождения (От младшего к старшему)
         service.sortByDateBorn();
-
+*/
     }
 }

@@ -1,3 +1,6 @@
+package familyTree.human;
+
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
@@ -55,18 +58,16 @@ public class Human implements Serializable, Comparable<Human> {
         return "\n--------------------\n" + name + "\nродился:" + birhtDay + "\n Отец - " + father.getName()
                 + "\n Мать - "
                 + mother.getName()
-                +"\n--------------------";
+                + "\n--------------------";
     }
 
-
     @Override
-    public int compareTo(Human o){
-       try{
-        return -this.birhtDay.compareTo(o.birhtDay);
-       }
-       catch(Exception e){
-        System.out.println("Не ввели дату рождения!");
-       }
-    return 0;
+    public int compareTo(Human o) {
+        try {
+            return -this.birhtDay.compareTo(o.birhtDay);
+        } catch (Exception e) {
+            System.out.println("Не ввели дату рождения!");
+        }
+        return 0;
     }
 }

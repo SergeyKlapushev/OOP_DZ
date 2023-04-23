@@ -1,5 +1,12 @@
+package familyTree;
+
+
 import java.util.ArrayList;
 import java.util.List;
+
+import familyTree.humanIterator.HumanIterator;
+import familyTree.sortHumans.SortHumanByDateOfBorn;
+import familyTree.sortHumans.SortHumanByName;
 
 import java.util.Iterator;
 

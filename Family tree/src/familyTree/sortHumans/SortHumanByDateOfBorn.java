@@ -1,4 +1,9 @@
+package familyTree.sortHumans;
+
+
 import java.util.Comparator;
+
+import familyTree.human.Human;
 
 public class SortHumanByDateOfBorn<H> implements Comparator<Human>{
 
