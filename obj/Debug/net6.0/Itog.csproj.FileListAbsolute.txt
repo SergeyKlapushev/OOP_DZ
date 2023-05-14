@@ -1,0 +1,15 @@
+D:\Семинары GB\OOP\Itog\bin\Debug\net6.0\Itog.exe
+D:\Семинары GB\OOP\Itog\bin\Debug\net6.0\Itog.deps.json
+D:\Семинары GB\OOP\Itog\bin\Debug\net6.0\Itog.runtimeconfig.json
+D:\Семинары GB\OOP\Itog\bin\Debug\net6.0\Itog.dll
+D:\Семинары GB\OOP\Itog\bin\Debug\net6.0\Itog.pdb
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.csproj.AssemblyReference.cache
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.GeneratedMSBuildEditorConfig.editorconfig
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.AssemblyInfoInputs.cache
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.AssemblyInfo.cs
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.csproj.CoreCompileInputs.cache
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.dll
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\refint\Itog.dll
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.pdb
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\Itog.genruntimeconfig.cache
+D:\Семинары GB\OOP\Itog\obj\Debug\net6.0\ref\Itog.dll
